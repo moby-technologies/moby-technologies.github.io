@@ -1,0 +1,106 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Panel</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://unpkg.com/@holoviz/panel@0.12.6/dist/css/alerts.css" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/@holoviz/panel@0.12.6/dist/css/card.css" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/@holoviz/panel@0.12.6/dist/css/dataframe.css" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/@holoviz/panel@0.12.6/dist/css/json.css" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/@holoviz/panel@0.12.6/dist/css/loading.css" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/@holoviz/panel@0.12.6/dist/css/markdown.css" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/@holoviz/panel@0.12.6/dist/css/widgets.css" type="text/css" />
+        <style>
+            
+                    .bk.pn-loading.arcs:before {
+                      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBzdHlsZT0ibWFyZ2luOiBhdXRvOyBiYWNrZ3JvdW5kOiBub25lOyBkaXNwbGF5OiBibG9jazsgc2hhcGUtcmVuZGVyaW5nOiBhdXRvOyIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIj4gIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjMyIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZT0iI2MzYzNjMyIgc3Ryb2tlLWRhc2hhcnJheT0iNTAuMjY1NDgyNDU3NDM2NjkgNTAuMjY1NDgyNDU3NDM2NjkiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+ICAgIDxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgdHlwZT0icm90YXRlIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgZHVyPSIxcyIga2V5VGltZXM9IjA7MSIgdmFsdWVzPSIwIDUwIDUwOzM2MCA1MCA1MCI+PC9hbmltYXRlVHJhbnNmb3JtPiAgPC9jaXJjbGU+PC9zdmc+");
+                      max-height: 400px;
+                    }
+                    
+        </style>
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.0.2/dist/echarts.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl@2.0.2/dist/echarts-gl.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@0.12.6/dist/panel.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="3d833b7e-86fd-44ba-ab32-4b2bd198665c" data-root-id="19479"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="19480">
+          {"8dc32a87-7f76-4aad-a5a8-b762d93a81b5":{"defs":[{"extends":null,"module":null,"name":"ReactiveHTML1","overrides":[],"properties":[]},{"extends":null,"module":null,"name":"FlexBox1","overrides":[],"properties":[{"default":"flex-start","kind":null,"name":"align_content"},{"default":"flex-start","kind":null,"name":"align_items"},{"default":"row","kind":null,"name":"flex_direction"},{"default":"wrap","kind":null,"name":"flex_wrap"},{"default":"flex-start","kind":null,"name":"justify_content"}]},{"extends":null,"module":null,"name":"TemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]},{"extends":null,"module":null,"name":"MaterialTemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]}],"roots":{"references":[{"attributes":{"data":{"series":[{"axisLabel":{"show":true},"axisLine":{"lineStyle":{"color":[[0.3,"red"],[0.7,"gold"],[1.0,"green"]],"width":10}},"axisTick":{"show":true},"data":[{"name":"Buy Signal","value":[41.0]}],"detail":{"formatter":"{value}%"},"endAngle":-45,"max":100,"min":0,"name":"Gauge","radius":"100%","splitLine":{"show":true},"splitNumber":10,"startAngle":225,"title":{"fontSize":18,"fontWeight":"bold"},"type":"gauge"}],"tooltip":{"formatter":"{b} : {c}%"}},"height":300,"margin":[5,10,5,10],"name":"Buy Signal","sizing_mode":"fixed","width":300},"id":"19479","type":"panel.models.echarts.ECharts"}],"root_ids":["19479"]},"title":"Bokeh Application","version":"2.4.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            const fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  const docs_json = document.getElementById('19480').textContent;
+                  const render_items = [{"docid":"8dc32a87-7f76-4aad-a5a8-b762d93a81b5","root_ids":["19479"],"roots":{"19479":"3d833b7e-86fd-44ba-ab32-4b2bd198665c"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    let attempts = 0;
+                    const timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
