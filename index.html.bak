@@ -1,28 +1,10 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<H1> Content Reference </H1>
 
-<iframe src="/assets/img/Bokeh/ADAUSD_gauge.html"
-    sandbox="allow-same-origin allow-scripts"
-    width="100%"
-    height="500"
-    scrolling="no"
-    seamless="seamless"
-    frameborder="0">
-</iframe>
-
-
-<iframe src="/assets/img/Bokeh/ADAUSD.html"
-    sandbox="allow-same-origin allow-scripts"
-    width="100%"
-    scrolling="no"
-    seamless="seamless"
-    frameborder="0">
-</iframe>
-
-
+<p>Nothing to see here</p>
+<iframe src="composite_rating.html" width=100% height=600> </iframe>
 
 </body>
 </html>
